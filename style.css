@@ -12,7 +12,10 @@ body {
     color: #F5F5F5;
 }
 
-header, section, footer, nav {
+header,
+section,
+footer,
+nav {
     max-width: 1180px;
     margin: 0 auto;
     padding: 16px;
@@ -23,7 +26,9 @@ header {
     padding-top: 30px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0 0 12px;
     line-height: 1.2;
 }
@@ -252,9 +257,22 @@ button:hover,
 }
 
 @keyframes slide {
-    0%, 33.333%, 100% { transform: translateX(0); }
-    34%, 66.666% { transform: translateX(-33.333%); }
-    67%, 99.999% { transform: translateX(-66.666%); }
+
+    0%,
+    33.333%,
+    100% {
+        transform: translateX(0);
+    }
+
+    34%,
+    66.666% {
+        transform: translateX(-33.333%);
+    }
+
+    67%,
+    99.999% {
+        transform: translateX(-66.666%);
+    }
 }
 
 footer {
@@ -264,10 +282,12 @@ footer {
 }
 
 @media (max-width: 860px) {
+
     .movie-table th,
     .movie-table td {
         padding: 10px;
     }
+
     .carousel-track {
         animation-duration: 20s;
     }
