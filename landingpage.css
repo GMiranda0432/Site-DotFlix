@@ -8,17 +8,14 @@
     --font-main: 'Poppins', sans-serif;
     --transition: all 0.3s ease;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: var(--font-main);
     background-color: var(--bg-dark);
@@ -62,25 +59,20 @@ ul {
     cursor: pointer;
     border: 2px solid transparent;
 }
-
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--text-light);
 }
-
 .btn-primary:hover {
     background-color: var(--primary-hover);
 }
-
 .btn-secondary {
     background-color: rgba(109, 109, 110, 0.7);
     color: white;
 }
-
 .btn-secondary:hover {
     background-color: rgba(109, 109, 110, 1);
 }
-
 .btn-outline {
     border-color: var(--primary-color);
     color: var(--text-light);
