@@ -5,6 +5,7 @@
     --bg-card: #2f2f2f;
     --text-light: #ffffff;
     --text-muted: #b3b3b3;
+    --greenie: #28a745;
     --font-main: 'Poppins', sans-serif;
     --transition: all 0.3s ease;
 }
@@ -73,12 +74,12 @@ ul {
 }
 
 .btn-secondary {
-    background-color: rgba(109, 109, 109, 0.7);
-    color: white;
+    background-color: var(--text-muted);
+    color: var(--text-light);
 }
 
 .btn-secondary:hover {
-    background-color: rgba(109, 109, 109, 1);
+    background-color: var(--text-muted);
 }
 
 .btn-outline {
@@ -104,7 +105,7 @@ ul {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--bg-card);
 }
 
 .logo {
@@ -184,7 +185,7 @@ ul {
 .card:hover,
 .testimonial-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card-icon {
@@ -282,9 +283,9 @@ ul {
 
 .input-group input {
     padding: 12px;
-    border: 1px solid #444;
+    border: 1px solid var(--bg-card);
     border-radius: 4px;
-    background-color: #222;
+    background-color: var(--bg-dark);
     color: var(--text-light);
     font-family: inherit;
     transition: var(--transition);
@@ -293,19 +294,19 @@ ul {
 .input-group input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 5px rgba(229, 9, 20, 0.5);
+    box-shadow: 0 0 5px rgba(230, 20, 20, 0.5);
 }
 
 .input-group input:not(:placeholder-shown):valid {
-    border-color: #28a745;
+    border-color: var(--greenie);
 }
 
 .input-group input:not(:placeholder-shown):invalid {
-    border-color: #dc3545;
+    border-color: var(--primary-color);
 }
 
 footer {
-    background-color: #000;
+    background-color: var(--bg-dark);
     padding: 40px 5% 20px;
 }
 
@@ -315,7 +316,7 @@ footer {
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--bg-card);
     padding-bottom: 30px;
 }
 

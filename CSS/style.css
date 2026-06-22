@@ -1,5 +1,13 @@
-/* Tema de cores do site
-   Fundo escuro, textos claros e detalhes em vermelho. */
+:root {
+    --primary-color: #E50914;
+    --primary-hover: #b20710;
+    --bg-dark: #141414;
+    --bg-card: #2f2f2f;
+    --text-light: #ffffff;
+    --text-muted: #b3b3b3;
+    --font-main: 'Poppins', sans-serif;
+    --transition: all 0.3s ease;
+}
 
 * {
     box-sizing: border-box;
@@ -7,23 +15,35 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0D0D0D;
-    color: #F5F5F5;
+    min-height: 100vh;
+    font-family: var(--font-main);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
 }
 
+.container,
 header,
-section,
+main,
 footer,
+section,
 nav {
+    width: 100%;
     max-width: 1180px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 0 16px;
 }
 
 header {
     text-align: center;
     padding-top: 30px;
+}
+
+img,
+iframe,
+table {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 h1,
@@ -35,11 +55,11 @@ h3 {
 
 p {
     margin: 0 0 16px;
-    color: #B3B3B3;
+    color: var(--text-muted);
 }
 
 a {
-    color: #E50914;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -78,7 +98,7 @@ nav ul li {
 
 nav ul li a,
 .top-menu ul li a {
-    color: #E50914;
+    color: var(--primary-color);
 }
 
 .intro,
@@ -98,23 +118,23 @@ nav ul li a,
 .movie-table th,
 .movie-table td {
     padding: 14px;
-    border: 1px solid #2b2b2b;
+    border: 1px solid var(--bg-card);
     vertical-align: middle;
 }
 
 .movie-table thead th {
-    background-color: #E50914;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-light);
     text-transform: uppercase;
     letter-spacing: 0.02em;
 }
 
 .movie-table tbody tr {
-    background-color: #1F1F1F;
+    background-color: var(--bg-card);
 }
 
 .movie-table tbody tr:nth-child(even) {
-    background-color: #171717;
+    background-color: var(--bg-card);
 }
 
 .poster {
@@ -130,25 +150,25 @@ nav ul li a,
 }
 
 .review-card {
-    background-color: #1F1F1F;
-    border: 1px solid #2b2b2b;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--bg-card);
     padding: 22px;
     border-radius: 16px;
 }
 
 .review-card h2 {
     margin-bottom: 10px;
-    color: #F5F5F5;
+    color: var(--text-light);
 }
 
 .review-card .meta {
     margin-bottom: 10px;
-    color: #B3B3B3;
+    color: var(--text-light);
 }
 
 .review-form-section {
-    background-color: #1F1F1F;
-    border: 1px solid #2b2b2b;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--bg-card);
     border-radius: 18px;
     padding: 24px;
     margin-bottom: 24px;
@@ -160,7 +180,7 @@ nav ul li a,
 }
 
 .review-form label {
-    color: #F5F5F5;
+    color: var(--text-light);
     font-weight: bold;
 }
 
@@ -168,9 +188,9 @@ nav ul li a,
 .review-form select,
 .review-form textarea {
     width: 100%;
-    background-color: #0D0D0D;
-    border: 1px solid #2b2b2b;
-    color: #F5F5F5;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--bg-card);
+    color: var(--text-light);
     padding: 12px;
     border-radius: 12px;
 }
@@ -192,10 +212,10 @@ nav ul li a,
 
 .editable {
     display: inline-block;
-    background-color: #1F1F1F;
+    background-color: var(--bg-dark);
     padding: 16px;
     margin-top: 16px;
-    border: 1px solid #2b2b2b;
+    border: 1px solid var(--bg-card);
     border-radius: 10px;
     width: calc(100% - 34px);
 }
@@ -203,8 +223,8 @@ nav ul li a,
 button,
 .button {
     display: inline-block;
-    background-color: #E50914;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-light);
     padding: 12px 22px;
     border-radius: 10px;
     border: none;
@@ -256,39 +276,118 @@ button:hover,
     text-align: center;
 }
 
-@keyframes slide {
-
-    0%,
-    33.333%,
-    100% {
-        transform: translateX(0);
-    }
-
-    34%,
-    66.666% {
-        transform: translateX(-33.333%);
-    }
-
-    67%,
-    99.999% {
-        transform: translateX(-66.666%);
-    }
-}
-
 footer {
     text-align: center;
     padding: 18px 16px 32px;
-    color: #888;
+    color: var(--text-muted);
 }
+@media (max-width: 990px) {
+    .top-menu,
+    nav {
+        padding: 12px 8px;
+    }
 
-@media (max-width: 860px) {
+    .top-menu ul,
+    nav ul {
+        gap: 12px;
+    }
+
+    .movie-table-section {
+        overflow-x: auto;
+    }
+
+    .movie-table {
+        min-width: 760px;
+    }
 
     .movie-table th,
     .movie-table td {
         padding: 10px;
     }
 
+    .poster {
+        width: 90px;
+    }
+
+    .review-form-section,
+    .review-card,
+    .editable {
+        padding: 20px;
+    }
+
+    .review-form input,
+    .review-form select,
+    .review-form textarea {
+        padding: 10px;
+    }
+
+    .review-form button,
+    button,
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    header {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .top-menu ul,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .movie-table {
+        min-width: 100%;
+    }
+
+    .movie-table th,
+    .movie-table td {
+        padding: 8px;
+    }
+
+    .poster {
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .review-list {
+        gap: 16px;
+    }
+
+    .review-form input,
+    .review-form select,
+    .review-form textarea {
+        width: 100%;
+    }
+
+    .review-form button,
+    button,
+    .button {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
     .carousel-track {
-        animation-duration: 20s;
+        display: block;
+        width: 100%;
+        animation: none;
+    }
+
+    .carousel-slide {
+        padding: 16px;
+    }
+
+    .carousel-slide img {
+        max-width: 100%;
     }
 }
