@@ -39,7 +39,6 @@ header {
 }
 
 img,
-iframe,
 table {
     max-width: 100%;
     width: 100%;
@@ -374,7 +373,7 @@ footer {
     iframe {
         width: 100%;
         max-width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .carousel-track {

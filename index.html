@@ -3,181 +3,170 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Gabriel de Miranda">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Filmes</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    
+    <title>Landing Page - Dotflix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/landingpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
-        <h1>Gabriel de Miranda</h1>
-        <h2>Bem-vindo ao meu site sobre filmes!</h2>
-    </header>
-
-    <nav class="top-menu">
-        <ul>
-            <li><a href="conta/cadastro.html">Cadastro</a></li>
-            <li><a href="conta/login.html">Login</a></li>
-        </ul>
-    </nav>
-
-    <section class="intro">
-        <p>Este site foi criado para falar sobre <strong>filmes</strong> e compartilhar algumas recomendações incríveis
-            que estão nos cinemas atuais.</p>
-        <p>Aqui você encontrará informações sobre <em>filmes populares</em>, curiosidades e formas de entrar em contato
-            com as agências responsáveis pelos filmes, como Warner Bros ou Universal Studios.</p>
-    </section>
-
-    <section class="movie-table-section">
-        <h2>Filmes em cartaz</h2>
-        <p>Confira horários, classificações e opções de exibição para cada título.</p>
-
-        <table class="movie-table">
-            <thead>
-                <tr>
-                    <th>Filme</th>
-                    <th>Cartaz</th>
-                    <th>Horários</th>
-                    <th>Classificação</th>
-                    <th>Gênero</th>
-                    <th>Exibição</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Cara de um focinho de outro</td>
-                    <td><img class="poster"
-                            src="https://br.web.img3.acsta.net/c_310_420/img/47/92/4792740edfeef9efd6152f65743bcc8e.jpg"
-                            alt="Poster Cara de um focinho de outro"></td>
-                    <td>13:30, 16:30, 19:30</td>
-                    <td>★★★☆☆</td>
-                    <td>Comédia</td>
-                    <td>Online</td>
-                </tr>
-                <tr>
-                    <td>Uma segunda chance</td>
-                    <td><img class="poster"
-                            src="https://br.web.img2.acsta.net/c_310_420/img/d8/b8/d8b881a85dfcc80a1103184df5039128.jpg"
-                            alt="Poster Uma segunda chance"></td>
-                    <td>15:00, 17:30, 20:00</td>
-                    <td>★★★★★</td>
-                    <td>Drama</td>
-                    <td>Online e Cinema</td>
-                </tr>
-                <tr>
-                    <td>Todo mundo em pânico 7</td>
-                    <td><img class="poster"
-                            src="https://br.web.img3.acsta.net/c_310_420/img/f9/05/f9057daa31ce46e6a8d9114415da3d88.jpg"
-                            alt="Poster Todo mundo em pânico 7"></td>
-                    <td>16:00, 17:30, 19:00</td>
-                    <td>★★★☆☆</td>
-                    <td>Comédia / Terror</td>
-                    <td>Online e Cinema</td>
-                </tr>
-                <tr>
-                    <td>Devoradores de estrelas</td>
-                    <td><img class="poster"
-                            src="https://br.web.img3.acsta.net/c_310_420/img/00/51/0051bc7965f851f46f856d4119741487.jpg"
-                            alt="Poster Devoradores de estrelas"></td>
-                    <td>17:00, 18:30, 20:45</td>
-                    <td>★★★★☆</td>
-                    <td>Ficção / Aventura</td>
-                    <td>Cinema</td>
-                </tr>
-                <tr>
-                    <td>Missão Refúgio</td>
-                    <td><img class="poster"
-                            src="https://tse4.mm.bing.net/th/id/OIP._Yv1V54DUYKxq0rd8Lj4CgHaJH?rs=1&pid=ImgDetMain&o=7&rm=3"
-                            alt="Poster Missão Refúgio"></td>
-                    <td>18:00, 21:00</td>
-                    <td>★★★☆☆</td>
-                    <td>Ação</td>
-                    <td>Cinema</td>
-                </tr>
-                <tr>
-                    <td>Casamento Sangrento: A Viúva</td>
-                    <td><img class="poster"
-                            src="https://tse2.mm.bing.net/th/id/OIP.L_45iMwqxzNr4Jb0W6HfYAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
-                            alt="Poster Casamento Sangrento: A Viúva"></td>
-                    <td>19:00, 22:00</td>
-                    <td>★★★☆☆</td>
-                    <td>Terror</td>
-                    <td>Online e Cinema</td>
-                </tr>
-                <tr>
-                    <td>O Velho Fusca</td>
-                    <td><img class="poster"
-                            src="https://ingresso-a.akamaihd.net/prd/img/movie/o-velho-fusca/0d661753-6525-4499-8fdb-544d3c8961cc.webp"
-                            alt="Poster O Velho Fusca"></td>
-                    <td>16:30, 20:00, 23:00</td>
-                    <td>★☆☆☆☆</td>
-                    <td>Drama</td>
-                    <td>Online e Cinema</td>
-                </tr>
-                <tr>
-                    <td>O Diário do Pilar na Amazônia</td>
-                    <td><img class="poster"
-                            src="https://br.web.img3.acsta.net/c_310_420/img/ff/52/ff52836c4a365a40ba88e583629a0a9c.jpg"
-                            alt="Poster O Diário do Pilar na Amazônia"></td>
-                    <td>09:00, 13:00, 16:30</td>
-                    <td>★★★★☆</td>
-                    <td>Aventura</td>
-                    <td>Cinema</td>
-                </tr>
-                <tr>
-                    <td>O Morro dos Ventos Uivantes</td>
-                    <td><img class="poster"
-                            src="https://ingresso-a.akamaihd.net/prd/img/movie/o-morro-dos-ventos-uivantes/c49d48d8-a444-4e81-86cd-18ea1cad5202.webp"
-                            alt="Poster O Morro dos Ventos Uivantes"></td>
-                    <td>14:00, 17:30, 21:00</td>
-                    <td>★★★★☆</td>
-                    <td>Romance</td>
-                    <td>Online</td>
-                </tr>
-                <tr>
-                    <td>POV: Presença Oculta</td>
-                    <td><img class="poster"
-                            src="https://br.web.img2.acsta.net/c_310_420/img/98/85/9885ffaf3b5e3f537e50252d64cd3f02.jpg"
-                            alt="Poster POV: Presença Oculta"></td>
-                    <td>12:45, 18:15</td>
-                    <td>★★★☆☆</td>
-                    <td>Terror</td>
-                    <td>Online</td>
-                </tr>
-                <tr>
-                    <td>As Backrooms</td>
-                    <td><img class="poster"
-                            src="https://media.fstatic.com/lsvZSmba5WqUWxgvVQLoDSPXcoc=/322x478/smart/filters:format(webp)/media/movies/covers/2025/03/imagem_2025-03-15_110748937.png"
-                            alt="Poster As Backrooms"></td>
-                    <td>00:00, 06:00, 12:00, 18:00</td>
-                    <td>★★★★★</td>
-                    <td>Suspense</td>
-                    <td>Presencial</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section class="share-link">
-        <p>Quer aprender assistir filmes de graça sem anúncio num site nada suspeito? Clique aqui: <a
-                href="https://youtu.be/i8ju_10NkGY?si=MQJ43H3iL8rvfusj" target="_blank">Filmes de graça</a></p>
-    </section>
-
-    <nav>
+    <header class = "main-header">
+        <div class="logo">Dotflix<span>.</span></div>
+        <nav class = "main-nav">
         <ul>
             <li><a href="index.html">Início</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="sobre.html">Avaliações</a></li>
             <li><a href="conta/formularioFilmes.html">Formulário</a></li>
             <li><a href="contato.html">Sugestões</a></li>
             <li><a href="explication.html">Resenhas</a></li>
-            <li><a href="landingpage.html">Landing Page</a></li>
         </ul>
     </nav>
+    <ul>
+        <li><a href="conta/cadastro.html">Cadastro</a></li>
+        <li><a href="conta/login.html">Login</a></li>
+    </ul>
+        <a class="button btn-outline" href="#cadastro">Criar Conta</a>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Filmes, avaliações e inspirações para sua próxima sessão</h1>
+                <p>Conheça os destaques do cinema e veja opiniões reais em uma página leve e visual. Tudo o que você
+                    precisa para decidir o que assistir hoje.</p>
+                <div class="hero-buttons">
+                    <a class="button btn-primary" href="#posters">Ver destaques</a>
+                    <a class="button btn-secondary" href="explication.html">Ler resenhas</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Rolo de filme de cinema com pipoca">
+            </div>
+        </section>
+        <section id="beneficios" class="benefits">
+            <h2 class="section-title">Por que escolher o Dotflix?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <h3>Sem Anúncios</h3>
+                    <p>Navegue pelas resenhas e indicações sem interrupções chatas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidade Ativa</h3>
+                    <p>Compartilhe opiniões e descubra pérolas escondidas do cinema.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Acesse de Qualquer Lugar</h3>
+                    <p>Plataforma 100% responsiva para você usar no celular ou PC.</p>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="about">
+            <div class="about-text">
+                <h2 class="section-title">Tudo em um só lugar</h2>
+                <p>Veja seus filmes ou vídeos que você baixou de forma legalizada com seus amigos online em sincronia.
+                </p>
+                <p>Use o site dos nossos patrocinadores para essa façanha, integrado com os nossos filmes, não precisa
+                    criar conta.</p>
+                <a class="button btn-primary" href="https://www.watchparty.me/" target="_blank">Acesse o WatchParty</a>
+            </div>
+        </section>
+        <section id="posters" class="carousel-section">
+            <h2 class="section-title">Posters em destaque</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="https://br.web.img3.acsta.net/c_310_420/img/47/92/4792740edfeef9efd6152f65743bcc8e.jpg"
+                        alt="Cara de um focinho de outro">
+                    <img src="https://br.web.img2.acsta.net/c_310_420/img/d8/b8/d8b881a85dfcc80a1103184df5039128.jpg"
+                        alt="Uma segunda chance">
+                    <img src="https://br.web.img3.acsta.net/c_310_420/img/f9/05/f9057daa31ce46e6a8d9114415da3d88.jpg"
+                        alt="Todo mundo em pânico 7">
+                    <img src="https://br.web.img3.acsta.net/c_310_420/img/00/51/0051bc7965f851f46f856d4119741487.jpg"
+                        alt="Devoradores de estrelas">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP._Yv1V54DUYKxq0rd8Lj4CgHaJH?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Missão Refúgio">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.L_45iMwqxzNr4Jb0W6HfYAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Casamento Sangrento: A Viúva">
+                    <img src="https://ingresso-a.akamaihd.net/prd/img/movie/o-velho-fusca/0d661753-6525-4499-8fdb-544d3c8961cc.webp"
+                        alt="O Velho Fusca">
+                    <img src="https://br.web.img3.acsta.net/c_310_420/img/ff/52/ff52836c4a365a40ba88e583629a0a9c.jpg"
+                        alt="O Diário do Pilar na Amazônia">
+                    <img src="https://ingresso-a.akamaihd.net/prd/img/movie/o-morro-dos-ventos-uivantes/c49d48d8-a444-4e81-86cd-18ea1cad5202.webp"
+                        alt="O Morro dos Ventos Uivantes">
+                    <img src="https://br.web.img2.acsta.net/c_310_420/img/98/85/9885ffaf3b5e3f537e50252d64cd3f02.jpg"
+                        alt="POV: Presença Oculta">
+                    <img src="https://media.fstatic.com/lsvZSmba5WqUWxgvVQLoDSPXcoc=/322x478/smart/filters:format(webp)/media/movies/covers/2025/03/imagem_2025-03-15_110748937.png"
+                        alt="As Backrooms">
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2 class="section-title">O que dizem sobre nós</h2>
+            <div class="cards-container">
+                <article class="testimonial-card">
+                    <p class="quote">"O melhor site para descobrir filmes indie que eu nunca encontraria nas plataformas
+                        tradicionais!"</p>
+                    <span class="author">- Lucas M.</span>
+                </article>
+                <article class="testimonial-card">
+                    <p class="quote">"A integração com o WatchParty mudou a forma como assisto filmes com meus amigos de
+                        outro estado."</p>
+                    <span class="author">- Mariana S.</span>
+                </article>
+            </div>
+        </section>
+        <section id="contato" class="contact-section">
+            <div class="form-container">
+                <h2 class="section-title">Fique por dentro!</h2>
+                <p>Assine nossa newsletter para receber as melhores indicações da semana.</p>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="input-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    </div>
+                    <button type="submit" class="button btn-primary btn-block">Quero me inscrever</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 Gabriel de Miranda. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Dotflix<span>.</span></h3>
+                <p>Sua sede online definitiva para todo conteúdo de cinema.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Redes Sociais</h4>
+                <ul>
+                    <li><a href="dotflix">Instagram</a></li>
+                    <li><a href="dotflix">Twitter/X</a></li>
+                    <li><a href="dotflix">Letterboxd</a></li>
+                </ul>
+            </div>
+            <nav>
+        <ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Gabriel de Miranda - Projeto de Desenvolvimento Frontend I. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 
